@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 196.4 196.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #7a222c;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.7, SVG Export Plug-In . SVG Version: 1.2.0 Build 194)  -->
+  <g>
+    <g id="Layer_1">
+      <g>
+        <circle class="cls-2" cx="98.4" cy="98" r="96"/>
+        <g>
+          <path class="cls-3" d="M80.3,94.2l38.3-42.3h-13.8v-15.3h47.2v15.3h-12.7l-37.1,42.3,38,49.3h12.9v15.3h-48.8v-15.3h12.9l-36.9-49.3ZM61.4,143.4V51.9h-15v-15.3h48.6v15.3h-15.4v91.6h13.8v15.3h-47v-15.3h15Z"/>
+          <path class="cls-1" d="M120,53.1l-37.5,41.3,38.3,50.9h-14.7v11.8h45.2v-11.8h-11.9c-13.1-17-26.3-34-39.4-51l38.5-44.1h11.8v-11.8h-43.7v11.8h16l-2.7,2.9ZM63.2,51.9v93.3h-15v11.8h43.5v-11.8h-13.8V50.1h15.4v-11.8h-45.1v11.8h15v1.8ZM59.7,141.7V53.6h-15v-18.8h52.1v18.8h-15.4v36.7l33.4-36.7h-11.6v-18.8h50.7v18.8h-13.7l-35.5,40.7,36.6,47.4h13.7v18.8h-52.3v-18.8h11.2l-32.4-43v43h13.8v18.8h-50.5v-18.8h15Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
