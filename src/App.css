@@ -25,16 +25,16 @@ h2 {
 h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  letter-spacing: .03rem;
+  letter-spacing: 0.03rem;
   color: white;
   font-family: "REM", sans-serif;
   font-weight: 900;
 }
 
-p{
+p {
   font-size: 1rem;
   margin-bottom: 1rem;
-  letter-spacing: .03rem;
+  letter-spacing: 0.03rem;
   color: white;
   font-family: "REM", sans-serif;
   font-weight: 400;
@@ -43,11 +43,12 @@ p{
 /* Header */
 
 .header {
+  background-image: url("/img/assets/topography-background-2.webp");
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #333;
+  background-color: #333333;
   height: 100px;
   padding: 20px;
   font-family: "Rokkitt", serif;
@@ -208,48 +209,63 @@ p{
   height: 700px;
 }
 
+.slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  pointer-events: none; /* so clicks pass through */
+  z-index: 1; /* above the image */
+}
+
 .slide {
   position: relative;
   width: 100%;
-  height: 700px;
-  padding: 20px;
+  height: 600px;
 }
 
 .slide-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 20px;
 }
 
 .slide-overlay {
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: rgb(255, 255, 255);
+  top: 45%;
+  left: 0;
+  transform: translateY(-50%);
+  text-align: left;
+  color: #ffffff;
   z-index: 1000;
   letter-spacing: 0.2rem;
-  background-color: #3333338e;
+  background-color: #0000008e;
   padding: 50px;
-  border-radius: 20px;
+  border-radius: 0px 0px 20px 0px;
+  width: 65%;
 }
 
 .slide-overlay h2 {
-  font-size: 6rem;
+  font-size: 5rem;
   margin-bottom: 1rem;
   font-family: "REM", sans-serif;
   font-weight: 900;
+  text-align: left;
 }
 
 .slide-description {
   font-size: 1rem;
   color: #ffffff;
   margin-top: 0.5rem;
-  max-width: 500px;
+  max-width: 90%;
   font-family: "REM", sans-serif;
   font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.5rem;
+  text-align: left;
 }
 
 .slide-overlay button {
@@ -258,6 +274,10 @@ p{
   color: black;
   border: none;
   cursor: pointer;
+}
+
+.highlight {
+  color: #f1b649; /* your chosen highlight color */
 }
 
 /* End of Carousel */
@@ -317,16 +337,23 @@ p{
 
 /* Home */
 
-.home-body {
-  background-color: #333;
-  height: 100%;
-}
-
-.container {
+.body {
+  background-image: url("/img/assets/topography-background-2.webp");
+  background-repeat: repeat;
+  background-size: 600px 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.container {
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8rem;
 }
 
 .services-grid {
@@ -367,10 +394,44 @@ p{
 
 /* Media Queries */
 
+@media (max-width: 1500px) {
+  .slide-overlay {
+    .h2-hero {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: white;
+      font-family: "REM", sans-serif;
+      font-weight: 900;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .slide-overlay {
+    width: 90%;
+    .h2-hero {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: white;
+      font-family: "REM", sans-serif;
+      font-weight: 900;
+      width: 100%;
+    }
+  }
+}
+
 @media (max-width: 845px) {
   .nav-links {
     display: none;
   }
+
+  .header-button-holder {
+  position: absolute;
+  top: 40px;
+  right: 40%;
+  border-radius: 0;
+}
 
   .header {
     .hamburger {
@@ -378,5 +439,37 @@ p{
       position: absolute;
       right: 20px;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .slide-overlay {
+    width: 90%;
+    .h2-hero {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: white;
+      font-family: "REM", sans-serif;
+      font-weight: 900;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .slide-overlay {
+    width: 90%;
+    .h2-hero {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: white;
+      font-family: "REM", sans-serif;
+      font-weight: 900;
+      width: 100%;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
   }
 }

@@ -4,9 +4,10 @@ import HeroCarousel from "../components/HeroCarousel";
 const Home = () => {
   return (
     <>
-      <div className="home-body">
+      <div className="body">
         <HeroCarousel />
         <div className="container">
+          
           <h2>SERVICES</h2>
           <div className="services-grid">
             <div className="service-item">
@@ -53,7 +54,7 @@ const Home = () => {
           <div className="split-container">
             <img className="about-us-img" src="/img/assets/workers.jpg" alt="keene krib works" />
             <div className="about-us">
-            <h3>Over 30 Years of Local Experience</h3>
+            <h3>Over 160 Years of combined Local Experience</h3>
             <p>
               Keene Krib is a family-owned and operated business based in
               Brooklyn, Wellington. We've proudly served Wellington and the
