@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+.header {
+  z-index: 900;
+}
+
 a {
   text-decoration: none;
 }
@@ -164,6 +168,7 @@ p {
   position: relative;
   padding-bottom: 5px;
   transition: color 0.3s ease-in-out;
+  font-size: 2rem;
 }
 
 .modal-content a::after {
@@ -171,7 +176,7 @@ p {
   position: absolute;
   left: 50%;
   bottom: -2px;
-  width: 90%;
+  width: 30%;
   height: 3px;
   background-color: white;
   transform: translateX(-50%) scaleX(0);
@@ -240,7 +245,7 @@ p {
   transform: translateY(-50%);
   text-align: left;
   color: #ffffff;
-  z-index: 1000;
+  z-index: 800;
   letter-spacing: 0.2rem;
   background-color: #0000008e;
   padding: 50px;
@@ -268,14 +273,6 @@ p {
   text-align: left;
 }
 
-.slide-overlay button {
-  padding: 0.5rem 1rem;
-  background: rgb(255, 255, 255);
-  color: black;
-  border: none;
-  cursor: pointer;
-}
-
 .highlight {
   color: #f1b649; /* your chosen highlight color */
 }
@@ -286,32 +283,31 @@ p {
 
 .secondary-button {
   width: 120px;
-  background-color: #ffffff;
+  background-color: #7a222c;
   padding: 10px;
+  border: 2px solid transparent;
   border-radius: 10px;
   font-size: 18px;
   font-family: "REM", sans-serif;
   font-weight: 500;
-  color: #7a222c;
+  color: white;
   align-items: center;
   justify-content: center;
-  margin: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
 }
 
 .secondary-button:hover {
-  width: 120px;
-  background-color: #7a222c;
-  padding: 10px;
-  border-radius: 10px;
-  font-family: "REM", sans-serif;
-  font-weight: 500;
+  background-color: transparent;
+  border-color: #7a222c;
   color: white;
 }
 
 .primary-button {
-  width: 120px;
   background-color: #f1b649;
   padding: 10px;
+  border: 2px solid transparent;
   border-radius: 10px;
   font-size: 18px;
   font-family: "REM", sans-serif;
@@ -319,19 +315,16 @@ p {
   color: white;
   align-items: center;
   justify-content: center;
-  margin: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s, border 0.3s;
 }
 
 .primary-button:hover {
-  width: 120px;
   background-color: transparent;
-  border: 2px solid #f1b649;
-  padding: 10px;
-  border-radius: 10px;
-  font-family: "REM", sans-serif;
-  font-weight: 500;
+  border-color: #f1b649;
   color: white;
 }
+
 
 /* End of Buttons */
 
@@ -360,6 +353,7 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 80%;
+  height: 100%;
   gap: 1.5rem;
   margin-top: 1rem;
 }
@@ -375,21 +369,20 @@ p {
 
 .split-container {
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
   width: 80%;
 }
 
 .about-us {
-  width: 80%;
-  max-width: 80ch;
+  width: 50%;
+  max-width: 70ch;
 }
 
 .about-us-img {
-  width: 30%;
+  width: 50%;
   margin-right: 20px;
   border-radius: 40px;
-  max-width: 80ch;
 }
 
 /* Media Queries */
@@ -407,6 +400,32 @@ p {
   }
 }
 
+@media (max-width: 1200px) {
+  .split-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-us {
+    width: 100%;
+    padding: 1rem;
+    max-width: 100ch;
+  }
+
+  .about-us-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 40px;
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 1024px) {
   .slide-overlay {
     width: 90%;
@@ -419,6 +438,11 @@ p {
       width: 100%;
     }
   }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 845px) {
@@ -427,11 +451,11 @@ p {
   }
 
   .header-button-holder {
-  position: absolute;
-  top: 40px;
-  right: 40%;
-  border-radius: 0;
-}
+    position: absolute;
+    top: 40px;
+    right: 15%;
+    border-radius: 0;
+  }
 
   .header {
     .hamburger {
@@ -446,7 +470,7 @@ p {
   .slide-overlay {
     width: 90%;
     .h2-hero {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
       color: white;
       font-family: "REM", sans-serif;
@@ -454,13 +478,40 @@ p {
       width: 100%;
     }
   }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .header .header-button-holder {
+    display: none;
+  }
+
+  .header-button-holder {
+    bottom: 0px;
+    right: 0%;
+    border-radius: 0;
+  }
+
+  .slide-description {
+  max-width: 100%;
+}
 }
 
 @media (max-width: 425px) {
   .slide-overlay {
-    width: 90%;
+    width: 100%;
     .h2-hero {
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
       color: white;
       font-family: "REM", sans-serif;

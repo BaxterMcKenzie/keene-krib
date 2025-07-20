@@ -57,6 +57,9 @@ const Header = () => {
             <NavLink to="/" onClick={closeModal}>
               Home
             </NavLink>
+            <NavLink to="/contact" onClick={closeModal}>
+              Contact
+            </NavLink>
           </div>
         </div>
       )}

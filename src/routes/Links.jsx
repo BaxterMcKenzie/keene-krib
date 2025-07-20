@@ -7,7 +7,7 @@ const Links = () => {
   return (
     <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/" element={<Contact/>}/>
+        <Route path="/contact" element={<Contact/>}/>
     </Routes>
   )
 }

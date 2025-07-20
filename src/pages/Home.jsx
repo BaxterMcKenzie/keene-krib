@@ -1,9 +1,16 @@
 import React from "react";
 import HeroCarousel from "../components/HeroCarousel";
+import Seo from "../components/Seo"; // make sure this path matches your folder structure
 
 const Home = () => {
   return (
     <>
+      <Seo
+        title="Keene Krib — Wellington Retaining Wall & Piling Experts"
+        description="Keene Krib is a family-owned Wellington business specialising in retaining walls, pole walls, piling, anchoring, and landscaping solutions."
+        url="https://keenekrib.co.nz" // update with your actual domain
+        image="https://keenekrib.co.nz/img/assets/workers.jpg" // update with your preferred social share image
+      />
       <div className="body">
         <HeroCarousel />
         <div className="container">
@@ -49,11 +56,14 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="container">
-          <h2>ABOUT US</h2>
-          <div className="split-container">
-            <img className="about-us-img" src="/img/assets/workers.jpg" alt="keene krib works" />
-            <div className="about-us">
+        <h2>ABOUT US</h2>
+        <div className="split-container">
+          <img
+            className="about-us-img"
+            src="/img/assets/workers.jpg"
+            alt="Keene Krib team working on a retaining wall project in Wellington"
+          />
+          <div className="about-us">
             <h3>Over 160 Years of combined Local Experience</h3>
             <p>
               Keene Krib is a family-owned and operated business based in
@@ -78,7 +88,6 @@ const Home = () => {
               <a href="mailto:qs@keenekrib.co.nz"> qs@keenekrib.co.nz</a> for a
               free quote. We’re always happy to help.
             </p>
-          </div>
           </div>
         </div>
       </div>
