@@ -20,7 +20,7 @@ a {
 
 h2 {
   font-size: 6rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   color: white;
   font-family: "REM", sans-serif;
   font-weight: 900;
@@ -211,7 +211,11 @@ p {
 .hero-carousel {
   position: relative;
   width: 100%;
-  height: 700px;
+  height: 600px;
+}
+
+.hero-carousel-small {
+  height: 400px; /* or whatever smaller height you want */
 }
 
 .slide::before {
@@ -229,7 +233,7 @@ p {
 .slide {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 100%; /* always full height of container */
 }
 
 .slide-image {
@@ -248,7 +252,7 @@ p {
   z-index: 800;
   letter-spacing: 0.2rem;
   background-color: #0000008e;
-  padding: 50px;
+  padding: 1.8rem;
   border-radius: 0px 0px 20px 0px;
   width: 65%;
 }
@@ -274,7 +278,7 @@ p {
 }
 
 .highlight {
-  color: #f1b649; /* your chosen highlight color */
+  color: #f1b649;
 }
 
 /* End of Carousel */
@@ -296,6 +300,7 @@ p {
   margin-bottom: 5px;
   margin-right: 5px;
   transition: background-color 0.3s, border 0.3s, color 0.3s;
+  cursor: pointer;
 }
 
 .secondary-button:hover {
@@ -317,6 +322,10 @@ p {
   justify-content: center;
   margin-bottom: 5px;
   transition: background-color 0.3s, border 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+  align-self: flex-start;
 }
 
 .primary-button:hover {
@@ -324,7 +333,6 @@ p {
   border-color: #f1b649;
   color: white;
 }
-
 
 /* End of Buttons */
 
@@ -346,7 +354,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
 }
 
 .services-grid {
@@ -365,6 +373,16 @@ p {
   border: 3px solid #f1b649;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   font-weight: bold;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .split-container {
@@ -383,6 +401,147 @@ p {
   width: 50%;
   margin-right: 20px;
   border-radius: 40px;
+  margin-bottom: 3rem;
+}
+
+a {
+  color: #f1b649;
+}
+
+/* Footer */
+
+.footer {
+  background-image: url("/img/assets/topography-background-2.webp");
+  background-color: #222; /* dark background so white text stands out */
+  padding: 2rem 1rem;
+  font-family: "REM", Arial, sans-serif;
+  color: white; /* all text white */
+  border-top: 2px solid #444; /* darker border */
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo img {
+  width: 120px;
+}
+
+.footer-contact p,
+.footer-links a,
+.footer-bottom p {
+  margin: 0.2rem 0;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-contact p {
+  line-height: 1.6rem;
+}
+
+.footer-contact a,
+.footer-links a {
+  color: #f1b649;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover,
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #f1b649; /* gold on hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  padding-top: 1rem;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #f1b649;
+  text-decoration: underline;
+}
+
+/* CONTACT PAGE */
+
+.contact-intro {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  max-width: 600px;
+  text-align: center;
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: default;
+  width: 600px;
+  background-color: #f3f3f360;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 3px solid #f1b649;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form label {
+  font-family: "REM", sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  color: white;
+}
+
+.contact-form:hover {
+  transform: none;
+  cursor: default;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: "REM", sans-serif;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+/* Single Services Page */
+
+.service-paragraph {
+  max-width: 60ch;
+  line-height: 1.6;
+  margin-top: 5rem;
 }
 
 /* Media Queries */
@@ -426,26 +585,7 @@ p {
   }
 }
 
-@media (max-width: 1024px) {
-  .slide-overlay {
-    width: 90%;
-    .h2-hero {
-      font-size: 4rem;
-      margin-bottom: 1rem;
-      color: white;
-      font-family: "REM", sans-serif;
-      font-weight: 900;
-      width: 100%;
-    }
-  }
-
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 845px) {
+@media (max-width: 1100px) {
   .nav-links {
     display: none;
   }
@@ -466,6 +606,42 @@ p {
   }
 }
 
+@media (max-width: 1024px) {
+  .slide-overlay {
+    width: 90%;
+    .h2-hero {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: white;
+      font-family: "REM", sans-serif;
+      font-weight: 900;
+      width: 100%;
+    }
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .footer-social {
+    margin-top: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .slide-overlay {
     width: 90%;
@@ -482,6 +658,10 @@ p {
   .services-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact-form {
+    width: 80%;
   }
 }
 
@@ -503,8 +683,8 @@ p {
   }
 
   .slide-description {
-  max-width: 100%;
-}
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 425px) {

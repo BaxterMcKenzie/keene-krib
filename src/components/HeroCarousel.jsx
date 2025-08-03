@@ -34,9 +34,10 @@ const HeroCarousel = ({
   ),
   description = "Keene Krib is a family-owned Wellington business specializing in retaining walls, pole walls, piling, and landscaping.",
   showButtons = true,
+  small = false,  // new prop
 }) => {
   return (
-    <div className="hero-carousel">
+    <div className={`hero-carousel ${small ? "hero-carousel-small" : ""}`}>
       <div className="slide">
         <img src={image} alt={alt} className="slide-image" />
         <div className="slide-overlay">
@@ -48,5 +49,6 @@ const HeroCarousel = ({
     </div>
   );
 };
+
 
 export default HeroCarousel;

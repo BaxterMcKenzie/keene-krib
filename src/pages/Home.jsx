@@ -1,6 +1,7 @@
 import React from "react";
 import HeroCarousel from "../components/HeroCarousel";
 import Seo from "../components/Seo"; // make sure this path matches your folder structure
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -14,45 +15,52 @@ const Home = () => {
       <div className="body">
         <HeroCarousel />
         <div className="container">
-          
           <h2>SERVICES</h2>
           <div className="services-grid">
-            <div className="service-item">
+            <Link to="/services/retaining-walls" className="service-item">
               <h3>Retaining Walls</h3>
               <p>Specialists in all types of retaining wall solutions.</p>
-            </div>
-            <div className="service-item">
+            </Link>
+
+            <Link to="/services/pole-walls" className="service-item">
               <h3>Pole Walls</h3>
               <p>Up to 6m high using reinforced earth techniques.</p>
-            </div>
-            <div className="service-item">
+            </Link>
+
+            <Link to="/services/block-walls" className="service-item">
               <h3>Block Walls</h3>
               <p>Segmental block systems using earth reinforcement.</p>
-            </div>
-            <div className="service-item">
+            </Link>
+
+            <Link to="/services/concrete-walls" className="service-item">
               <h3>Concrete Walls</h3>
               <p>Sprayed concrete with anchors for added stability.</p>
-            </div>
-            <div className="service-item">
+            </Link>
+
+            <Link to="/services/wall-repairs" className="service-item">
               <h3>Wall Repairs</h3>
               <p>Repairs for failed or damaged retaining structures.</p>
-            </div>
-            <div className="service-item">
+            </Link>
+
+            <Link to="/services/landscaping" className="service-item">
               <h3>Landscaping</h3>
               <p>Excavation, concreting, timber decking, and fencing.</p>
-            </div>
-            <div className="service-item">
+            </Link>
+
+            <Link to="/services/piling-drilling" className="service-item">
               <h3>Piling & Drilling</h3>
               <p>Commercial & domestic piling in concrete or timber.</p>
-            </div>
-            <div className="service-item">
+            </Link>
+
+            <Link to="/services/anchors" className="service-item">
               <h3>Anchors</h3>
               <p>Tension, passive & pile anchors for all depths and loads.</p>
-            </div>
-            <div className="service-item">
+            </Link>
+
+            <Link to="/services/micropiles-grouting" className="service-item">
               <h3>Micropiles & Grouting</h3>
               <p>ABV micropiles, augured holes, and injection grouting.</p>
-            </div>
+            </Link>
           </div>
         </div>
 
