@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -25,10 +26,10 @@ const Footer = () => {
         </div>
 
         <div className="footer-links">
-          <a href="/">Home</a>
-          <a href="/services">Services</a>
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/services">Services</Link>
+          <Link to="/about-us">About Us</Link>
+          <Link to="/contact">Contact</Link>
         </div>
 
         <div className="footer-social">
@@ -44,9 +45,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>
-          &copy; {new Date().getFullYear()} Keene Krib. All rights reserved.
-        </p>
+        <p>&copy; {new Date().getFullYear()} Keene Krib. All rights reserved.</p>
       </div>
     </footer>
   );

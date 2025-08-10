@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
 import Contact from '../pages/Contact';
 import Services from '../pages/Services';
+import AboutUs from '../pages/AboutUs';
 
 // Sub-service detail pages
 import RetainingWalls from '../pages/ServicePages/RetainingWalls';
@@ -14,13 +15,16 @@ import Landscaping from '../pages/ServicePages/Landscaping';
 import PilingDrilling from '../pages/ServicePages/PilingDrilling';
 import Anchors from '../pages/ServicePages/Anchors';
 import MicropilesGrouting from '../pages/ServicePages/MicropilesGrouting';
+import OurWork from '../pages/OurWork';
 
 const Links = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/about-us" element={<AboutUs />} />
       <Route path="/services" element={<Services />} />
+      <Route path="/our-work" element={<OurWork />} />
 
       {/* Sub-service routes */}
       <Route path="/services/retaining-walls" element={<RetainingWalls />} />

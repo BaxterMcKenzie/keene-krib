@@ -67,11 +67,11 @@ const Home = () => {
         <h2>ABOUT US</h2>
         <div className="split-container">
           <img
-            className="about-us-img"
+            className="split-container-img"
             src="/img/assets/workers.jpg"
             alt="Keene Krib team working on a retaining wall project in Wellington"
           />
-          <div className="about-us">
+          <div className="split-container-p">
             <h3>Over 160 Years of combined Local Experience</h3>
             <p>
               Keene Krib is a family-owned and operated business based in

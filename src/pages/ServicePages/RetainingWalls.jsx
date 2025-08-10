@@ -25,8 +25,12 @@ const RetainingWalls = () => {
       />
       <div className="body">
         <div className="split-container">
-          <h2>ILL PUT AN IMAGE HERE</h2>
-          <p className="service-paragraph">
+          <img
+          className="split-container-img"
+            src="/img/assets/retaining-wall.jpg"
+            alt="Example of a retaining wall built by Keene Krib"
+          />
+          <p className="split-container-p">
             At <strong>Keene Krib</strong>, we specialise in designing and
             constructing retaining walls that are both{" "}
             <strong>structurally sound</strong> and{" "}

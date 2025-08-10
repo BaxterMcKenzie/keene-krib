@@ -29,6 +29,12 @@ const Header = () => {
         <NavLink to="/services" activeclassname="active">
           Services
         </NavLink>
+        <NavLink to="/about-us" activeclassname="active">
+          About Us
+        </NavLink>
+        <NavLink to="/our-work" activeclassname="active">
+          Our Work
+        </NavLink>
         <NavLink to="/contact" activeclassname="active">
           Contact
         </NavLink>
@@ -62,6 +68,12 @@ const Header = () => {
             </NavLink>
             <NavLink to="/services" onClick={closeModal}>
               Services
+            </NavLink>
+            <NavLink to="/about-us" activeclassname="active">
+              About Us
+            </NavLink>
+            <NavLink to="/our-work" activeclassname="active">
+              Our Work
             </NavLink>
             <NavLink to="/contact" onClick={closeModal}>
               Contact
