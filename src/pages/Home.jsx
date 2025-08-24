@@ -14,51 +14,93 @@ const Home = () => {
       />
       <div className="body">
         <HeroCarousel />
-        <div className="container">
+        <div className="container services-container">
           <h2>SERVICES</h2>
           <div className="services-grid">
             <Link to="/services/retaining-walls" className="service-item">
-              <h3>Retaining Walls</h3>
+              <h3>
+                Retaining Walls
+                <img
+                  src="/img/icons/retaining-wall.svg"
+                  alt="Retaining Wall Icon"
+                />
+              </h3>
               <p>Specialists in all types of retaining wall solutions.</p>
             </Link>
 
             <Link to="/services/pole-walls" className="service-item">
-              <h3>Pole Walls</h3>
+              <h3>
+                Pole Walls
+                <img src="/img/icons/pole-walls.svg" alt="Pole Walls Icon" />
+              </h3>
               <p>Up to 6m high using reinforced earth techniques.</p>
             </Link>
 
             <Link to="/services/block-walls" className="service-item">
-              <h3>Block Walls</h3>
+              <h3>
+                Block Walls
+                <img src="/img/icons/block-walls.svg" alt="Block Walls Icon" />
+              </h3>
               <p>Segmental block systems using earth reinforcement.</p>
             </Link>
 
             <Link to="/services/concrete-walls" className="service-item">
-              <h3>Concrete Walls</h3>
+              <h3>
+                Concrete Walls
+                <img
+                  src="/img/icons/concrete-walls.svg"
+                  alt="Concrete Walls Icon"
+                />
+              </h3>
               <p>Sprayed concrete with anchors for added stability.</p>
             </Link>
 
             <Link to="/services/wall-repairs" className="service-item">
-              <h3>Wall Repairs</h3>
+              <h3>
+                Wall Repairs
+                <img
+                  src="/img/icons/wall-repairs.svg"
+                  alt="Wall Repairs Icon"
+                />
+              </h3>
               <p>Repairs for failed or damaged retaining structures.</p>
             </Link>
 
             <Link to="/services/landscaping" className="service-item">
-              <h3>Landscaping</h3>
+              <h3>
+                Landscaping
+                <img src="/img/icons/landscaping.svg" alt="Landscaping Icon" />
+              </h3>
               <p>Excavation, concreting, timber decking, and fencing.</p>
             </Link>
 
             <Link to="/services/piling-drilling" className="service-item">
-              <h3>Piling & Drilling</h3>
+              <h3>
+                Piling & Drilling
+                <img
+                  src="/img/icons/piling-drilling.svg"
+                  alt="Piling and Drilling Icon"
+                />
+              </h3>
               <p>Commercial & domestic piling in concrete or timber.</p>
             </Link>
 
             <Link to="/services/anchors" className="service-item">
-              <h3>Anchors</h3>
+              <h3>
+                Anchors
+                <img src="/img/icons/anchors.svg" alt="Anchors Icon" />
+              </h3>
               <p>Tension, passive & pile anchors for all depths and loads.</p>
             </Link>
 
             <Link to="/services/micropiles-grouting" className="service-item">
-              <h3>Micropiles & Grouting</h3>
+              <h3>
+                Micropiles & Grouting
+                <img
+                  src="/img/icons/micropiles.svg"
+                  alt="Micropiles and Grouting Icon"
+                />
+              </h3>
               <p>ABV micropiles, augured holes, and injection grouting.</p>
             </Link>
           </div>

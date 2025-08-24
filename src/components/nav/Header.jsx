@@ -69,10 +69,10 @@ const Header = () => {
             <NavLink to="/services" onClick={closeModal}>
               Services
             </NavLink>
-            <NavLink to="/about-us" activeclassname="active">
+            <NavLink to="/about-us" onClick={closeModal}>
               About Us
             </NavLink>
-            <NavLink to="/our-work" activeclassname="active">
+            <NavLink to="/our-work" onClick={closeModal}>
               Our Work
             </NavLink>
             <NavLink to="/contact" onClick={closeModal}>

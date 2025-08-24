@@ -32,46 +32,55 @@ const Services = () => {
               {
                 title: "Retaining Walls",
                 path: "/services/retaining-walls",
+                icon: "/img/icons/retaining-wall.svg",
                 content: `We design and construct a wide range of retaining walls tailored to suit your landscape and soil conditions. Whether it's timber, concrete, or natural stone, our retaining walls are built to last and engineered to prevent erosion, manage water flow, and stabilise sloped terrain.`,
               },
               {
                 title: "Pole Walls",
                 path: "/services/pole-walls",
+                icon: "/img/icons/pole-walls.svg",
                 content: `Ideal for steep gradients, our pole walls use treated timber or steel posts and reinforced earth techniques. These systems can reach heights of 6m, making them perfect for hillside and subdivision projects.`,
               },
               {
                 title: "Block Walls",
                 path: "/services/block-walls",
+                icon: "/img/icons/block-walls.svg",
                 content: `Our segmental block walls combine strength with clean aesthetics. Reinforced with geogrid, these walls are perfect for residential gardens, commercial developments, and multi-level landscaping.`,
               },
               {
                 title: "Concrete Walls",
                 path: "/services/concrete-walls",
+                icon: "/img/icons/concrete-walls.svg",
                 content: `From shotcrete to poured-in-place, our concrete wall systems are engineered for strength and durability. Ideal for large-scale commercial or infrastructure projects.`,
               },
               {
                 title: "Wall Repairs",
                 path: "/services/wall-repairs",
+                icon: "/img/icons/wall-repairs.svg",
                 content: `We repair leaning, cracked, or failing walls using cost-effective, engineered solutions that restore safety and longevity without full replacement.`,
               },
               {
                 title: "Landscaping",
                 path: "/services/landscaping",
+                icon: "/img/icons/landscaping.svg",
                 content: `Complement your retaining project with professional landscaping — including site clearing, excavation, concreting, fencing, and decking.`,
               },
               {
                 title: "Piling & Drilling",
                 path: "/services/piling-drilling",
+                icon: "/img/icons/piling-drilling.svg",
                 content: `We provide piling and drilling using timber, concrete, or steel for stable foundations. Suitable for both residential and commercial needs.`,
               },
               {
                 title: "Anchors",
                 path: "/services/anchors",
+                icon: "/img/icons/anchors.svg",
                 content: `We install ground anchors (tension, passive, or pile) for walls, slopes, and unstable sites, all engineered to your site's specific load requirements.`,
               },
               {
                 title: "Micropiles & Grouting",
                 path: "/services/micropiles-grouting",
+                icon: "/img/icons/micropiles.svg",
                 content: `Used in constrained or poor soil conditions, our micropiles and grouting solutions stabilize structures and improve ground integrity.`,
               },
             ].map((service, index) => (
@@ -85,7 +94,10 @@ const Services = () => {
                   color: "inherit",
                 }}
               >
-                <h3>{service.title}</h3>
+                <h3>
+                  {service.title}
+                  <img src={service.icon} alt={`${service.title} Icon`} />
+                </h3>
                 <p>{service.content}</p>
                 <span
                   className="primary-button"

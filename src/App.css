@@ -356,6 +356,26 @@ p {
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
+  padding-bottom: 4rem;
+  position: relative;
+  border-bottom: none;
+}
+
+.services-container {
+  position: relative;
+  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+.services-container::after {
+  content: "";
+  display: block;
+  width: 800px; /* change to desired length or % */
+  border-bottom: 2px solid #cccccc9d;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* centers it */
 }
 
 .services-grid {
@@ -384,6 +404,19 @@ p {
 .service-item:hover {
   transform: scale(1.05);
   cursor: pointer;
+}
+
+.service-item h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+.service-item h3 img {
+  width: 80px;
+  height: 80px;
 }
 
 .split-container {
@@ -552,6 +585,20 @@ a {
 
 /* Single Services Page */
 
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
 /* Media Queries */
 
 @media (max-width: 1500px) {
@@ -607,7 +654,7 @@ a {
 
   .split-container-img {
     width: 100%;
-    height: 300px;
+    max-height: 500px;
     object-fit: cover;
     object-position: center;
     border-radius: 40px;
@@ -615,7 +662,13 @@ a {
     margin-right: 0;
     margin-top: 3rem;
   }
+
+    .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
 
 @media (max-width: 1024px) {
   .slide-overlay {
@@ -630,10 +683,6 @@ a {
     }
   }
 
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media (max-width: 900px) {
@@ -670,6 +719,15 @@ a {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .service-item h3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 2rem;
+}
 
   .contact-form {
     width: 80%;
