@@ -1,6 +1,8 @@
 import React from "react";
 import Seo from "../../components/Seo";
 import HeroCarousel from "../../components/HeroCarousel";
+import { Link } from "react-router-dom";
+import OtherServicesDropdown from "../../components/OtherServicesDropdown";
 
 const PoleWalls = () => {
   return (
@@ -22,6 +24,9 @@ const PoleWalls = () => {
         showButtons={false}
         small={true}
       />
+
+      <OtherServicesDropdown />
+
       <div className="body">
         <div className="split-container">
           <img
@@ -29,32 +34,76 @@ const PoleWalls = () => {
             src="/img/assets/retaining-wall.jpg"
             alt="Example of a pole wall built by Keene Krib"
           />
-          <p className="split-container-p">
-            At <strong>Keene Krib</strong>, we specialise in engineering pole walls
-            that tackle challenging slopes and steep terrain.<br />
-            Our pole walls are constructed with treated timber or steel posts,
-            reinforced with earth retention methods to ensure strength and
-            stability.<br />
-            <br />
-            With decades of experience working across Wellington’s varied
-            landscapes, we understand the importance of creating walls that
-            maintain <strong>structural integrity</strong> even under difficult
-            environmental conditions.<br />
-            Whether you need to stabilise a hillside for a new subdivision or
-            secure a steep residential property, our team delivers reliable,
-            compliant solutions tailored to your site.<br />
-            <br />
-            We carefully select materials and installation techniques to match
-            the specific challenges of your terrain, soil type, and load
-            requirements.<br />
-            Our pole walls are engineered to provide long-lasting support while
-            blending naturally into the landscape.<br />
-            <br />
-            From planning through to construction and maintenance, Keene Krib
-            provides expert craftsmanship and professional service.<br />
-            Trust us to build pole walls that protect your property and add value
-            to your site.
-          </p>
+
+          <div className="split-container-p">
+            <h3 className="split-container-h3">About Pole Walls</h3>
+
+            <p>
+              At <strong>Keene Krib</strong>, we specialise in engineering pole
+              walls for steep slopes and challenging terrain.
+            </p>
+
+            <p>
+              Our pole walls are constructed using{" "}
+              <strong>treated timber or steel posts</strong> combined with
+              reinforced earth techniques, ensuring both strength and stability.
+            </p>
+
+            <p>
+              With years of experience working across Wellington’s varied
+              landscapes, we understand how to maintain{" "}
+              <strong>structural integrity</strong> under difficult
+              environmental conditions.
+            </p>
+
+            <p>
+              Whether stabilising a hillside for a subdivision or securing a
+              steep residential property, our team provides reliable, compliant
+              solutions tailored to your site.
+            </p>
+
+            <p>
+              From material selection to installation and maintenance,{" "}
+              <strong>Keene Krib</strong> delivers expert craftsmanship and
+              professional service.
+            </p>
+          </div>
+        </div>
+
+        <div className="single-service-key">
+          <h4 className="features-title">Key Pole Wall Services:</h4>
+          <ul className="service-features-grid">
+            <li>
+              <img
+                src="/img/icons/pole-walls.svg"
+                alt="Timber Pole Walls Icon"
+              />
+              Timber Pole Walls – strong, durable, and naturally blending into
+              the landscape
+            </li>
+            <li>
+              <img src="/img/icons/anchors.svg" alt="Steel Pole Walls Icon" />
+              Steel Pole Walls – engineered for high-load and challenging slopes
+            </li>
+            <li>
+              <img
+                src="/img/icons/retaining-wall.svg"
+                alt="Reinforced Earth Icon"
+              />
+              Reinforced Earth – stabilising earth retention for long-term
+              structural integrity
+            </li>
+          </ul>
+        </div>
+
+        <div className="call-to-action-button-holder">
+          <Link to="/contact" className="secondary-button">
+            Contact Us
+          </Link>
+
+          <Link to="/contact" className="primary-button">
+            Get a Quote
+          </Link>
         </div>
       </div>
     </>

@@ -1,6 +1,8 @@
 import React from "react";
 import Seo from "../../components/Seo";
 import HeroCarousel from "../../components/HeroCarousel";
+import { Link } from "react-router-dom";
+import OtherServicesDropdown from "../../components/OtherServicesDropdown";
 
 const MicropilesGrouting = () => {
   return (
@@ -22,6 +24,9 @@ const MicropilesGrouting = () => {
         showButtons={false}
         small={true}
       />
+
+      <OtherServicesDropdown />
+
       <div className="body">
         <div className="split-container">
           <img
@@ -29,16 +34,75 @@ const MicropilesGrouting = () => {
             src="/img/assets/retaining-wall.jpg"
             alt="Example of micropiles and grouting by Keene Krib"
           />
-          <p className="split-container-p">
-            At <strong>Keene Krib</strong>, we offer specialist micropiling and injection grouting services to strengthen foundations and stabilize ground in difficult or constrained soil conditions.<br />
-            Micropiles are small-diameter, high-strength piles that can be installed in tight spaces where traditional piling is not feasible.<br />
-            <br />
-            Our grouting techniques involve injecting cementitious or chemical materials into the ground to fill voids, reduce permeability, and improve soil bearing capacity.<br />
-            These advanced solutions are ideal for underpinning existing structures, stabilizing slopes, and supporting new developments.<br />
-            <br />
-            We work closely with engineers to tailor micropile and grouting systems specific to your project’s geotechnical requirements.<br />
-            Trust Keene Krib for ground improvement solutions that deliver strength, stability, and long-term performance.<br />
-          </p>
+
+          <div className="split-container-p">
+            <h3 className="split-container-h3">About Micropiles & Grouting</h3>
+
+            <p>
+              At <strong>Keene Krib</strong>, we provide specialist micropiling
+              and injection grouting services to strengthen foundations and
+              improve ground stability in difficult soil conditions.
+            </p>
+
+            <p>
+              <strong>Micropiles</strong> are small-diameter, high-strength
+              piles ideal for tight or constrained spaces where traditional
+              piling cannot be used.
+              <br />
+              <strong>Grouting</strong> involves injecting cementitious or
+              chemical materials to fill voids, reduce permeability, and enhance
+              soil bearing capacity.
+            </p>
+
+            <p>
+              These solutions are perfect for underpinning existing structures,
+              stabilizing slopes, and supporting new developments.
+              <br />
+              We work closely with engineers to design systems that meet your
+              site’s geotechnical requirements, delivering long-term stability
+              and performance.
+            </p>
+
+            <p>
+              Choosing <strong>Keene Krib</strong> for micropile and grouting
+              projects ensures expert installation, durable results, and
+              confidence in the safety of your structures.
+            </p>
+          </div>
+        </div>
+
+        <div className="single-service-key">
+          <h4 className="features-title">Key Micropile & Grouting Services:</h4>
+          <ul className="service-features-grid">
+            <li>
+              <img src="/img/icons/piling-drilling.svg" alt="Micropiles Icon" />
+              Micropiles – high-strength small-diameter piles for constrained
+              spaces
+            </li>
+            <li>
+              <img src="/img/icons/anchors.svg" alt="Grouting Icon" />
+              Injection Grouting – fills voids and improves soil bearing
+              capacity
+            </li>
+            <li>
+              <img
+                src="/img/icons/concrete-walls.svg"
+                alt="Ground Stabilization Icon"
+              />
+              Ground Stabilization – underpinning and slope support for
+              long-term stability
+            </li>
+          </ul>
+        </div>
+
+        <div className="call-to-action-button-holder">
+          <Link to="/contact" className="secondary-button">
+            Contact Us
+          </Link>
+
+          <Link to="/contact" className="primary-button">
+            Get a Quote
+          </Link>
         </div>
       </div>
     </>

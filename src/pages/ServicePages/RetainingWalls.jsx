@@ -1,6 +1,8 @@
 import React from "react";
 import Seo from "../../components/Seo";
 import HeroCarousel from "../../components/HeroCarousel";
+import { Link } from "react-router-dom";
+import OtherServicesDropdown from "../../components/OtherServicesDropdown";
 
 const RetainingWalls = () => {
   return (
@@ -18,68 +20,103 @@ const RetainingWalls = () => {
             Retaining <span className="highlight">Walls</span>
           </>
         }
-        description="We build structural retaining walls designed to hold back soil and
-            shape your land for safety and usability."
+        description="We build structural retaining walls designed to hold back soil and shape your land for safety and usability."
         showButtons={false}
         small={true}
       />
+
+      <OtherServicesDropdown />
+
       <div className="body">
         <div className="split-container">
           <img
-          className="split-container-img"
+            className="split-container-img"
             src="/img/assets/retaining-wall.jpg"
             alt="Example of a retaining wall built by Keene Krib"
           />
-          <p className="split-container-p">
-            At <strong>Keene Krib</strong>, we specialise in designing and
-            constructing retaining walls that are both{" "}
-            <strong>structurally sound</strong> and{" "}
-            <strong>aesthetically pleasing</strong>.<br />
-            With over 40 years of experience across Wellington’s diverse
-            terrain, we’ve mastered the art of creating walls that hold back
-            more than just soil — they{" "}
-            <strong>
-              shape safe, functional, and beautiful outdoor spaces
-            </strong>
-            .<br />
-            <br />
-            Whether you need to <strong>stabilise a sloped section</strong>,
-            create <strong>flat areas for landscaping or building</strong>, or
-            address issues with <strong>erosion and drainage</strong>, our team
-            can deliver a solution that fits your land and budget.
-            <br />
-            We work with a wide range of materials including{" "}
-            <strong>
-              timber, concrete, crib blocks, stone, and segmental retaining
-              systems
-            </strong>
-            , carefully selecting the right approach based on engineering
-            requirements and the surrounding environment.
-            <br />
-            <br />
-            Our retaining walls are custom-built to meet the{" "}
-            <strong>specific demands of your site</strong>, with careful
-            attention paid to{" "}
-            <strong>
-              earth pressure, water flow, and structural longevity
-            </strong>
-            .<br />
-            We also ensure every wall we build complies with local regulations
-            and best-practice construction standards.
-            <br />
-            <br />
-            From <strong>residential garden walls</strong> to{" "}
-            <strong>large-scale civil or subdivision projects</strong>, we bring
-            expert knowledge, top-quality workmanship, and a reputation for
-            delivering results that stand the test of time.
-            <br />
-            We also offer <strong>repairs and reinforcement</strong> for damaged
-            or failing retaining structures.
-            <br />
-            <br />
-            Trust Keene Krib to hold the ground — and your project — with
-            strength, care, and confidence.
-          </p>
+
+          <div className="split-container-p">
+            <h3 className="split-container-h3">About Retaining Walls</h3>
+
+            <p>
+              At <strong>Keene Krib</strong>, we specialise in designing and
+              constructing retaining walls that are both{" "}
+              <strong>structurally sound</strong> and{" "}
+              <strong>aesthetically pleasing</strong>.
+            </p>
+
+            <p>
+              With over 40 years of experience across Wellington’s diverse
+              terrain, we create walls that hold back more than just soil — they{" "}
+              <strong>
+                shape safe, functional, and beautiful outdoor spaces
+              </strong>
+              .
+            </p>
+
+            <p>
+              We work with a wide range of materials including{" "}
+              <strong>
+                timber, concrete, crib blocks, stone, and segmental retaining
+                systems
+              </strong>
+              , selecting the right approach based on engineering requirements
+              and site conditions.
+            </p>
+
+            <p>
+              From <strong>residential garden walls</strong> to{" "}
+              <strong>large-scale civil or subdivision projects</strong>, we
+              deliver custom solutions designed for safety, durability, and
+              compliance with local building regulations.
+            </p>
+
+            <p>
+              We also offer <strong>repairs and reinforcement</strong> for
+              damaged or failing retaining structures, ensuring your walls
+              remain strong and reliable for years to come.
+            </p>
+          </div>
+        </div>
+
+        <div className="single-service-key">
+          <h4 className="features-title">Key Retaining Wall Services:</h4>
+          <ul className="service-features-grid">
+            <li>
+              <img
+                src="/img/icons/retaining-wall.svg"
+                alt="Timber Retaining Walls Icon"
+              />
+              Timber Walls – durable, visually appealing, and engineered for
+              strength
+            </li>
+            <li>
+              <img
+                src="/img/icons/concrete-walls.svg"
+                alt="Concrete Retaining Walls Icon"
+              />
+              Concrete Walls – engineered for maximum load-bearing capacity and
+              long-term durability
+            </li>
+            <li>
+              <img
+                src="/img/icons/block-walls.svg"
+                alt="Block Retaining Walls Icon"
+              />
+              Block & Segmental Systems – versatile solutions for residential
+              and commercial projects
+            </li>
+          </ul>
+        </div>
+
+        <div className="call-to-action-button-holder">
+          <Link to="/contact" className="secondary-button">
+            Contact Us
+          </Link>
+
+          <Link to="/contact" className="primary-button">
+            Get a Quote
+          </Link>
         </div>
       </div>
     </>

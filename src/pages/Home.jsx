@@ -106,6 +106,38 @@ const Home = () => {
           </div>
         </div>
 
+        <h2>OUR WORK</h2>
+        <div className="split-container">
+          <img
+            className="split-container-img"
+            src="/img/our-work/wood-pole-4.jpg"
+            alt="Keene Krib team working on a retaining wall project in Wellington"
+          />
+          <div className="split-container-p">
+            <h3>Trusted Projects Across Wellington</h3>
+            <p>
+              From residential gardens to large-scale commercial developments,
+              Keene Krib brings decades of local experience to every project.
+              Our team is skilled in retaining walls, landscaping, piling, and
+              more.
+            </p>
+            <p>
+              We take pride in delivering quality, reliable, and safe solutions
+              tailored to each site’s unique challenges.
+            </p>
+            <p>
+              Take a look at some of the projects we've completed for clients
+              across Wellington and see the care and craftsmanship we bring to
+              every job.
+            </p>
+            <Link to="/our-work" className="primary-button">
+              View Our Work
+            </Link>
+          </div>
+        </div>
+
+        <div className="divider"></div>
+
         <h2>ABOUT US</h2>
         <div className="split-container">
           <img

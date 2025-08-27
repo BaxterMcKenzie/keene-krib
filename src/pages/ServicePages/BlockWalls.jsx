@@ -1,6 +1,8 @@
 import React from "react";
 import Seo from "../../components/Seo";
 import HeroCarousel from "../../components/HeroCarousel";
+import { Link } from "react-router-dom";
+import OtherServicesDropdown from "../../components/OtherServicesDropdown";
 
 const BlockWalls = () => {
   return (
@@ -18,10 +20,13 @@ const BlockWalls = () => {
             Block <span className="highlight">Walls</span>
           </>
         }
-        description="Our segmental block walls are engineered for strength and aesthetic appeal, reinforced with geogrid for extra stability."
+        description="Segmental block walls engineered for strength, durability, and aesthetic appeal, reinforced with geogrid for extra stability."
         showButtons={false}
         small={true}
       />
+
+      <OtherServicesDropdown />
+
       <div className="body">
         <div className="split-container">
           <img
@@ -29,30 +34,75 @@ const BlockWalls = () => {
             src="/img/assets/retaining-wall.jpg"
             alt="Example of a block wall built by Keene Krib"
           />
-          <p className="split-container-p">
-            At <strong>Keene Krib</strong>, we specialise in constructing
-            segmental block walls that combine durability with clean,
-            professional aesthetics.<br />
-            These walls are reinforced with geogrid to ensure superior
-            stability and long-lasting performance, making them ideal for
-            residential gardens, commercial developments, and multi-level
-            landscaping projects.<br />
-            <br />
-            With decades of experience in Wellington’s unique terrain, we know
-            how to design block walls that manage earth pressures and blend
-            beautifully with their surroundings.<br />
-            Whether you need a decorative retaining feature or a robust
-            structural wall, our team will tailor a solution to fit your site
-            and budget.<br />
-            <br />
-            We use high-quality materials and proven engineering techniques to
-            ensure every block wall stands the test of time.<br />
-            Our craftsmanship and attention to detail make Keene Krib a trusted
-            partner for landscaping and retaining wall projects.<br />
-            <br />
-            Contact us to learn how our block walls can add strength and style
-            to your property.
-          </p>
+
+          <div className="split-container-p">
+            <h3 className="split-container-h3">About Block Walls</h3>
+
+            <p>
+              At <strong>Keene Krib</strong>, we specialize in designing and
+              constructing segmental block walls that balance strength with
+              visual appeal.
+              <br />
+              Our walls are reinforced with geogrid, providing long-lasting
+              stability and making them perfect for residential gardens,
+              commercial landscaping, and multi-level terraces.
+            </p>
+
+            <p>
+              We understand Wellington’s unique soil and terrain conditions,
+              allowing us to engineer walls that manage earth pressures
+              effectively while maintaining a clean, professional finish.
+              <br />
+              Each wall is tailored to the specific site and project
+              requirements, whether decorative or structural.
+            </p>
+
+            <p>
+              Using high-quality materials and proven engineering techniques, we
+              ensure every block wall stands the test of time.
+              <br />
+              Our craftsmanship and attention to detail make{" "}
+              <strong>Keene Krib</strong> a trusted partner for landscaping and
+              retaining wall solutions.
+            </p>
+          </div>
+        </div>
+
+        <div className="single-service-key">
+          <h4 className="features-title">Key Block Wall Services:</h4>
+          <ul className="service-features-grid">
+            <li>
+              <img
+                src="/img/icons/block-walls.svg"
+                alt="Segmental Block Walls Icon"
+              />
+              Segmental Block Walls – durable, engineered for residential and
+              commercial landscaping
+            </li>
+            <li>
+              <img
+                src="/img/icons/pole-walls.svg"
+                alt="Geogrid Reinforced Icon"
+              />
+              Geogrid Reinforcement – extra stability for multi-level or high
+              retaining walls
+            </li>
+            <li>
+              <img src="/img/icons/retaining-wall.svg" alt="Earthworks Icon" />
+              Site Preparation & Earthworks – ensuring strong foundations and
+              proper drainage
+            </li>
+          </ul>
+        </div>
+
+        <div className="call-to-action-button-holder">
+          <Link to="/contact" className="secondary-button">
+            Contact Us
+          </Link>
+
+          <Link to="/contact" className="primary-button">
+            Get a Quote
+          </Link>
         </div>
       </div>
     </>
