@@ -1,25 +1,34 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import HeroCarousel from "../components/HeroCarousel";
 import Seo from "../components/Seo";
 
 const Contact = () => {
   const [toastVisible, setToastVisible] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Here you would handle your form submission (e.g., API call)
-    // For demo, we just show toast:
-
-    setToastVisible(true);
-
-    // Hide toast after 3 seconds:
-    setTimeout(() => {
-      setToastVisible(false);
-    }, 3000);
-
-    // Optionally clear the form:
-    e.target.reset();
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        e.target,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY 
+      )
+      .then(
+        () => {
+          setToastVisible(true);
+          setError(null);
+          e.target.reset();
+          setTimeout(() => setToastVisible(false), 3000);
+        },
+        (err) => {
+          console.error("FAILED...", err);
+          setError("Something went wrong. Please try again.");
+        }
+      );
   };
 
   return (
@@ -30,6 +39,7 @@ const Contact = () => {
         url="https://keenekrib.co.nz/contact"
         image="https://keenekrib.co.nz/img/assets/workers.jpg"
       />
+
       <div className="body">
         <HeroCarousel
           image="/img/assets/contact-hero.webp"
@@ -55,12 +65,12 @@ const Contact = () => {
           <form className="contact-form" onSubmit={handleSubmit}>
             <label>
               Name:
-              <input type="text" name="name" required />
+              <input type="text" name="from_name" required />
             </label>
 
             <label>
               Email:
-              <input type="email" name="email" required />
+              <input type="email" name="from_email" required />
             </label>
 
             <label>
@@ -81,10 +91,11 @@ const Contact = () => {
           {toastVisible && (
             <div className="toast">Your message has been sent! Thank you.</div>
           )}
+
+          {error && <div className="toast error">{error}</div>}
         </div>
       </div>
 
-      {/* Add toast styles */}
       <style>{`
         .toast {
           position: fixed;
@@ -100,6 +111,9 @@ const Contact = () => {
           font-weight: 500;
           animation: fadein 0.3s ease;
           z-index: 1000;
+        }
+        .toast.error {
+          background: #e74c3c;
         }
         @keyframes fadein {
           from { opacity: 0; transform: translateY(10px); }
