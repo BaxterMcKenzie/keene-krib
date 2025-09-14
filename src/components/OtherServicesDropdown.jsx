@@ -6,8 +6,8 @@ const OtherServicesDropdown = () => {
   const services = [
     { name: "Retaining Walls", url: "/services/retaining-walls" },
     { name: "Pole Walls", url: "/services/pole-walls" },
-    { name: "Block Walls", url: "/services/block-walls" },
-    { name: "Concrete Walls", url: "/services/concrete-walls" },
+    { name: "Crib Walls", url: "/services/block-walls" },
+    { name: "Concrete/Spray Walls", url: "/services/concrete-walls" },
     { name: "Wall Repairs", url: "/services/wall-repairs" },
     { name: "Landscaping", url: "/services/landscaping" },
     { name: "Piling & Drilling", url: "/services/piling-drilling" },

@@ -8,19 +8,19 @@ const BlockWalls = () => {
   return (
     <>
       <Seo
-        title="Block Walls | Keene Krib"
-        description="Durable segmental block walls reinforced with geogrid, perfect for residential gardens and commercial landscaping across Wellington."
-        url="https://keenekrib.co.nz/services/block-walls"
+        title="Crib Walls | Keene Krib"
+        description="Durable segmental crib walls reinforced with geogrid, perfect for residential gardens and commercial landscaping across Wellington."
+        url="https://keenekrib.co.nz/services/crib-walls"
       />
       <HeroCarousel
         image="/img/assets/service-head-2.jpg"
-        alt="Block Walls"
+        alt="Crib Walls"
         heading={
           <>
-            Block <span className="highlight">Walls</span>
+            Crib <span className="highlight">Walls</span>
           </>
         }
-        description="Segmental block walls engineered for strength, durability, and aesthetic appeal, reinforced with geogrid for extra stability."
+        description="Segmental crib walls engineered for strength, durability, and aesthetic appeal, reinforced with geogrid for extra stability."
         showButtons={false}
         small={true}
       />
@@ -32,15 +32,15 @@ const BlockWalls = () => {
           <img
             className="split-container-img"
             src="/img/assets/retaining-wall.jpg"
-            alt="Example of a block wall built by Keene Krib"
+            alt="Example of a crib wall built by Keene Krib"
           />
 
           <div className="split-container-p">
-            <h3 className="split-container-h3">About Block Walls</h3>
+            <h3 className="split-container-h3">About Crib Walls</h3>
 
             <p>
               At <strong>Keene Krib</strong>, we specialize in designing and
-              constructing segmental block walls that balance strength with
+              constructing segmental crib walls that balance strength with
               visual appeal.
               <br />
               Our walls are reinforced with geogrid, providing long-lasting
@@ -59,7 +59,7 @@ const BlockWalls = () => {
 
             <p>
               Using high-quality materials and proven engineering techniques, we
-              ensure every block wall stands the test of time.
+              ensure every crib wall stands the test of time.
               <br />
               Our craftsmanship and attention to detail make{" "}
               <strong>Keene Krib</strong> a trusted partner for landscaping and
@@ -69,14 +69,14 @@ const BlockWalls = () => {
         </div>
 
         <div className="single-service-key">
-          <h4 className="features-title">Key Block Wall Services:</h4>
+          <h4 className="features-title">Key Crib Wall Services:</h4>
           <ul className="service-features-grid">
             <li>
               <img
                 src="/img/icons/block-walls.svg"
-                alt="Segmental Block Walls Icon"
+                alt="Segmental Crib Walls Icon"
               />
-              Segmental Block Walls – durable, engineered for residential and
+              Segmental Crib Walls – durable, engineered for residential and
               commercial landscaping
             </li>
             <li>

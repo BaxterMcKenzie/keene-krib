@@ -31,7 +31,7 @@ const Landscaping = () => {
         <div className="split-container">
           <img
             className="split-container-img"
-            src="/img/assets/retaining-wall.jpg"
+            src="/img/our-work/wood-pole-4.jpg"
             alt="Example of landscaping work by Keene Krib"
           />
 

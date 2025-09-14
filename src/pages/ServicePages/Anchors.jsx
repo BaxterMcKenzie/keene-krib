@@ -31,7 +31,7 @@ const Anchors = () => {
         <div className="split-container">
           <img
             className="split-container-img"
-            src="/img/assets/retaining-wall.jpg"
+            src="/img/services/spray-wall.webp"
             alt="Example of anchors installed by Keene Krib"
           />
 

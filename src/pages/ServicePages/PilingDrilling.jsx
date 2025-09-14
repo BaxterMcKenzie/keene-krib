@@ -31,7 +31,7 @@ const PilingDrilling = () => {
         <div className="split-container">
           <img
             className="split-container-img"
-            src="/img/assets/retaining-wall.jpg"
+            src="/img/services/piling.webp"
             alt="Example of piling and drilling work by Keene Krib"
           />
 

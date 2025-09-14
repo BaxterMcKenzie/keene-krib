@@ -31,7 +31,7 @@ const PoleWalls = () => {
         <div className="split-container">
           <img
             className="split-container-img"
-            src="/img/assets/retaining-wall.jpg"
+            src="/img/services/timber-wall.webp"
             alt="Example of a pole wall built by Keene Krib"
           />
 

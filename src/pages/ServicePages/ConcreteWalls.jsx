@@ -8,19 +8,19 @@ const ConcreteWalls = () => {
   return (
     <>
       <Seo
-        title="Concrete Walls | Keene Krib"
-        description="Engineered concrete wall solutions including shotcrete and poured-in-place walls for commercial and residential projects across Wellington."
+        title="Concrete / Spray Walls | Keene Krib"
+        description="From spray-applied shotcrete to poured-in-place solutions, our concrete and spray wall systems are engineered for strength and durability across Wellington."
         url="https://keenekrib.co.nz/services/concrete-walls"
       />
       <HeroCarousel
         image="/img/assets/service-head-2.jpg"
-        alt="Concrete Walls"
+        alt="Concrete / Spray Walls"
         heading={
           <>
-            Concrete <span className="highlight">Walls</span>
+            Concrete / <span className="highlight">Spray Walls</span>
           </>
         }
-        description="We provide engineered concrete wall systems designed for strength, durability, and longevity on any scale."
+        description="From spray-applied shotcrete to poured-in-place, our concrete and spray wall systems are engineered for strength, durability, and long-term performance."
         showButtons={false}
         small={true}
       />
@@ -31,19 +31,19 @@ const ConcreteWalls = () => {
         <div className="split-container">
           <img
             className="split-container-img"
-            src="/img/assets/retaining-wall.jpg"
-            alt="Example of a concrete wall built by Keene Krib"
+            src="/img/services/spray-wall.webp"
+            alt="Example of a concrete or spray wall built by Keene Krib"
           />
 
           <div className="split-container-p">
-            <h3 className="split-container-h3">About Concrete Walls</h3>
+            <h3 className="split-container-h3">About Concrete / Spray Walls</h3>
 
             <p>
               At <strong>Keene Krib</strong>, we specialise in professional
-              concrete retaining wall solutions for residential, commercial, and
+              concrete and spray wall solutions for residential, commercial, and
               infrastructure projects across Wellington.
               <br />
-              Our offerings include <strong>shotcrete</strong>,{" "}
+              Our offerings include <strong>spray-applied shotcrete</strong>,{" "}
               <strong>poured-in-place</strong>, and reinforced concrete walls
               engineered for long-lasting strength and durability.
             </p>
@@ -53,29 +53,29 @@ const ConcreteWalls = () => {
               load-bearing capacity, drainage, and compliance with local
               building codes.
               <br />
-              Whether it’s a large commercial site or a residential property,
-              our team delivers concrete wall solutions that combine reliability
-              and visual appeal.
+              Whether it’s a hillside retaining job, a large commercial site, or
+              a residential property, our team delivers concrete and spray wall
+              solutions that combine reliability and visual appeal.
             </p>
 
             <p>
-              Trust <strong>Keene Krib</strong> for concrete walls that provide
-              structural integrity, safety, and longevity, built with industry
-              best practices and high-quality materials.
+              Trust <strong>Keene Krib</strong> for concrete and spray walls
+              that provide structural integrity, safety, and longevity, built
+              with industry best practices and high-quality materials.
             </p>
           </div>
         </div>
 
         <div className="single-service-key">
-          <h4 className="features-title">Key Concrete Wall Services:</h4>
+          <h4 className="features-title">Key Concrete / Spray Wall Services:</h4>
           <ul className="service-features-grid">
             <li>
               <img
                 src="/img/icons/concrete-walls.svg"
-                alt="Concrete Walls Icon"
+                alt="Concrete and Spray Walls Icon"
               />
-              Shotcrete & Poured-in-Place – engineered walls for commercial and
-              residential projects
+              Spray-Applied Shotcrete & Poured-in-Place – engineered walls for
+              residential and commercial projects
             </li>
             <li>
               <img src="/img/icons/anchors.svg" alt="Anchors Icon" />

@@ -42,16 +42,16 @@ const Services = () => {
                 content: `Ideal for steep gradients, our pole walls use treated timber or steel posts and reinforced earth techniques. These systems can reach heights of 6m, making them perfect for hillside and subdivision projects.`,
               },
               {
-                title: "Block Walls",
+                title: "Cribs Walls",
                 path: "/services/block-walls",
                 icon: "/img/icons/block-walls.svg",
-                content: `Our segmental block walls combine strength with clean aesthetics. Reinforced with geogrid, these walls are perfect for residential gardens, commercial developments, and multi-level landscaping.`,
+                content: `Our segmental Cribs walls combine strength with clean aesthetics. Reinforced with geogrid, these walls are perfect for residential gardens, commercial developments, and multi-level landscaping.`,
               },
               {
-                title: "Concrete Walls",
+                title: "Concrete/Spray Walls",
                 path: "/services/concrete-walls",
                 icon: "/img/icons/concrete-walls.svg",
-                content: `From shotcrete to poured-in-place, our concrete wall systems are engineered for strength and durability. Ideal for large-scale commercial or infrastructure projects.`,
+                content: `From spray-applied shotcrete to poured-in-place solutions, our concrete and spray wall systems are engineered for strength and durability. Perfect for both residential retaining and large-scale commercial or infrastructure projects.`,
               },
               {
                 title: "Wall Repairs",

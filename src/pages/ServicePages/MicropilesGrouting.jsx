@@ -31,7 +31,7 @@ const MicropilesGrouting = () => {
         <div className="split-container">
           <img
             className="split-container-img"
-            src="/img/assets/retaining-wall.jpg"
+            src="/img/services/micropile.webp"
             alt="Example of micropiles and grouting by Keene Krib"
           />
 

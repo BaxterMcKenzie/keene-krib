@@ -31,7 +31,7 @@ const WallRepairs = () => {
         <div className="split-container">
           <img
             className="split-container-img"
-            src="/img/assets/retaining-wall.jpg"
+            src="/img/services/wall-repair.webp"
             alt="Example of a retaining wall repair by Keene Krib"
           />
 
