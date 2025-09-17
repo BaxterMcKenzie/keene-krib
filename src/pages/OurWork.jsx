@@ -14,9 +14,10 @@ const projects = [
     ],
     images: [
       "/img/our-work/hanging-house-1.jpg",
-      "/img/our-work/hanging-house-2.jpg",
-      "/img/our-work/hanging-house-3.jpg",
       "/img/our-work/hanging-house-4.jpg",
+      "/img/our-work/hanging-house-5.webp",
+      "/img/our-work/hanging-house-6.webp",
+      "/img/our-work/hanging-house-3.jpg",
     ],
   },
   {
@@ -29,10 +30,13 @@ const projects = [
     ],
     images: [
       "/img/our-work/access-path-4.jpg",
-      "/img/our-work/access-path-2.jpg",
       "/img/our-work/access-path-3.jpg",
       "/img/our-work/access-path-1.jpg",
+      "/img/our-work/access-path-2.webp",
+      "/img/our-work/access-path-1.webp",
       "/img/our-work/access-path-5.jpg",
+      "/img/our-work/access-path-3.webp",
+      "/img/our-work/access-path-4.webp",
     ],
   },
   {
@@ -67,82 +71,82 @@ const projects = [
     ],
   },
   {
-  id: 5,
-  title: "Urgent Slip Repair with Steel Pole Walls",
-  description: [
-    "Following a major slip behind a residential property, our team was called in for urgent stabilisation and repair works.",
-    "We installed strong steel pole retaining walls to secure the hillside, preventing further movement and protecting the home below.",
-    "Working efficiently under tight timeframes, Keene Krib provided a safe and durable solution that restored stability and gave the homeowners peace of mind.",
-  ],
-  images: [
-    "/img/our-work/steel-pole-slip-1.jpg",
-    "/img/our-work/steel-pole-slip-2.jpg",
-    "/img/our-work/steel-pole-slip-3.jpg",
-  ],
-},
-{
-  id: 6,
-  title: "Driveway Wall Repair with Steel Pole & Timber Finish",
-  description: [
-    "This project involved repairing a cracked and crumbling retaining wall along a narrow driveway.",
-    "To ensure long-term stability, we installed a strong steel pole wall as the structural backbone of the repair.",
-    "For a clean and attractive finish, the wall was completed with quality timber, blending strength with a natural look that complemented the property.",
-    "The result is a durable and visually appealing retaining wall that makes the driveway safer and more functional.",
-  ],
-  images: [
-    "/img/our-work/driveway-steel-timber-1.jpg",
-    "/img/our-work/driveway-steel-timber-2.jpg",
-    "/img/our-work/driveway-steel-timber-3.jpg",
-  ],
-},
-{
-  id: 7,
-  title: "Earthquake Strengthening with Self-Drilling Micropiles",
-  description: [
-    "For this Wellington project, our team carried out essential earthquake strengthening on a commercial building foundation.",
-    "We installed self-drilling micropiles, a specialist solution that allows precision installation in tight or challenging ground conditions.",
-    "This method provided both drilling and grouting in one process, ensuring maximum bond strength and efficiency.",
-    "The result was a reinforced and stabilised foundation designed to better withstand seismic activity, while meeting strict compliance and safety standards.",
-    "This project highlights our expertise in advanced foundation strengthening and engineered resilience for Wellington’s unique seismic environment.",
-  ],
-  images: [
-    "/img/our-work/earthquake-strengthening-1.jpg",
-    "/img/our-work/earthquake-strengthening-2.jpg",
-    "/img/our-work/earthquake-strengthening-3.jpg",
-  ],
-},
-{
-  id: 8,
-  title: "Slip Repair with Spray Concrete & Timber Fence",
-  description: [
-    "An urgent slip occurred behind a residential property, with limited access for machinery and crew.",
-    "Our team engineered a solution using spray concrete to stabilise the slope efficiently, working within the tight space constraints.",
-    "Above the newly repaired concrete, we constructed a high-quality timber fence to provide both safety and visual appeal for the homeowner.",
-    "The project required careful planning, precise execution, and attention to detail to ensure long-term stability and durability.",
-    "This job demonstrates our capability to tackle complex slip repairs, combining structural engineering with aesthetic finishing."
-  ],
-  images: [
-    "/img/our-work/slip-repair-spray-concrete-1.jpg",
-    "/img/our-work/slip-repair-spray-concrete-2.jpg",
-    "/img/our-work/slip-repair-spray-concrete-3.jpg"
-  ],
-},
-{
-  id: 9,
-  title: "Private Driveway Slip Repair with Bored Piles",
-  description: [
-    "A private driveway suffered a major slip, approximately 12 metres wide, with some of the surface crumbling and becoming unsafe for use.",
-    "The Keene Krib team carefully coordinated with seven different property owners to plan and execute the repair with minimal disruption.",
-    "We installed 13-metre-deep bored piles to stabilise the underlying ground and support the driveway and surrounding structures.",
-    "Once the piles were in place, we repaired and resurfaced the driveway to restore full functionality and safety.",
-    "This project required precise engineering, careful access management, and collaboration with multiple stakeholders to ensure a successful outcome."
-  ],
-  images: [
-    "/img/our-work/road-slip-repair-1.jpg",
-    "/img/our-work/road-slip-repair-2.jpg",
-    "/img/our-work/road-slip-repair-3.jpg"
-  ],
-},
+    id: 5,
+    title: "Urgent Slip Repair with Steel Pole Walls",
+    description: [
+      "Following a major slip behind a residential property, our team was called in for urgent stabilisation and repair works.",
+      "We installed strong steel pole retaining walls to secure the hillside, preventing further movement and protecting the home below.",
+      "Working efficiently under tight timeframes, Keene Krib provided a safe and durable solution that restored stability and gave the homeowners peace of mind.",
+    ],
+    images: [
+      "/img/our-work/steel-pole-slip-1.webp",
+      "/img/our-work/steel-pole-slip-4.webp",
+      "/img/our-work/steel-pole-slip-5.webp",
+      "/img/our-work/steel-pole-slip-6.webp",
+      "/img/our-work/steel-pole-slip-2.webp",
+      "/img/our-work/steel-pole-slip-3.webp",
+    ],
+  },
+  {
+    id: 6,
+    title: "Driveway Wall Repair with Steel Pole & Timber Finish",
+    description: [
+      "This project involved repairing a cracked and crumbling retaining wall along a narrow driveway.",
+      "To ensure long-term stability, we installed a strong steel pole wall as the structural backbone of the repair.",
+      "For a clean and attractive finish, the wall was completed with quality timber, blending strength with a natural look that complemented the property.",
+      "The result is a durable and visually appealing retaining wall that makes the driveway safer and more functional.",
+    ],
+    images: [
+      "/img/our-work/driveway-steel-timber-1.webp",
+      "/img/our-work/driveway-steel-timber-2.webp",
+    ],
+  },
+  {
+    id: 7,
+    title: "Earthquake Strengthening with Self-Drilling Micropiles",
+    description: [
+      "For this Wellington project, our team carried out essential earthquake strengthening on a commercial building foundation.",
+      "We installed self-drilling micropiles, a specialist solution that allows precision installation in tight or challenging ground conditions.",
+      "This method provided both drilling and grouting in one process, ensuring maximum bond strength and efficiency.",
+      "The result was a reinforced and stabilised foundation designed to better withstand seismic activity, while meeting strict compliance and safety standards.",
+      "This project highlights our expertise in advanced foundation strengthening and engineered resilience for Wellington’s unique seismic environment.",
+    ],
+    images: [
+      "/img/our-work/earthquake-strengthening-1.webp",
+      "/img/our-work/earthquake-strengthening-2.webp",
+    ],
+  },
+  {
+    id: 8,
+    title: "Slip Repair with Spray Concrete & Timber Fence",
+    description: [
+      "An urgent slip occurred behind a residential property, with limited access for machinery and crew.",
+      "Our team engineered a solution using spray concrete to stabilise the slope efficiently, working within the tight space constraints.",
+      "Above the newly repaired concrete, we constructed a high-quality timber fence to provide both safety and visual appeal for the homeowner.",
+      "The project required careful planning, precise execution, and attention to detail to ensure long-term stability and durability.",
+      "This job demonstrates our capability to tackle complex slip repairs, combining structural engineering with aesthetic finishing.",
+    ],
+    images: [
+      "/img/our-work/slip-repair-spray-concrete-1.webp",
+      "/img/our-work/slip-repair-spray-concrete-2.webp",
+      "/img/our-work/slip-repair-spray-concrete-3.webp",
+    ],
+  },
+  {
+    id: 9,
+    title: "Private Driveway Slip Repair with Bored Piles",
+    description: [
+      "A private driveway suffered a major slip, approximately 12 metres wide, with some of the surface crumbling and becoming unsafe for use.",
+      "The Keene Krib team carefully coordinated with seven different property owners to plan and execute the repair with minimal disruption.",
+      "We installed 13-metre-deep bored piles to stabilise the underlying ground and support the driveway and surrounding structures.",
+      "Once the piles were in place, we repaired and resurfaced the driveway to restore full functionality and safety.",
+      "This project required precise engineering, careful access management, and collaboration with multiple stakeholders to ensure a successful outcome.",
+    ],
+    images: [
+      "/img/our-work/road-slip-repair-2.webp",
+      "/img/our-work/road-slip-repair-1.webp",
+    ],
+  },
 ];
 
 const OurWork = () => {

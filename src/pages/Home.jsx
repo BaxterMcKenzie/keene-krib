@@ -38,7 +38,7 @@ const Home = () => {
 
             <Link to="/services/block-walls" className="service-item">
               <h3>
-                Block Walls
+                Crib Walls
                 <img src="/img/icons/block-walls.svg" alt="Block Walls Icon" />
               </h3>
               <p>Segmental block systems using earth reinforcement.</p>
