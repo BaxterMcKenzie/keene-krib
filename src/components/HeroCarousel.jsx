@@ -23,7 +23,7 @@ const HeaderButtons = () => {
 };
 
 const HeroCarousel = ({
-  image = "/img/assets/crib-wall.jpg",
+  image = "/img/assets/crib-hero-home.webp",
   alt = "Holding up Wellington for over 40 years",
   heading = (
     <>

@@ -14,7 +14,7 @@ const Services = () => {
       />
       <div className="body">
         <HeroCarousel
-          image="/img/assets/our-services.jpg"
+          image="/img/assets/our-services-hero.webp"
           alt="Keene Krib Services"
           heading={
             <>

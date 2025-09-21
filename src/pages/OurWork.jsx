@@ -145,6 +145,8 @@ const projects = [
     images: [
       "/img/our-work/road-slip-repair-2.webp",
       "/img/our-work/road-slip-repair-1.webp",
+      "/img/our-work/road-slip-repair-3.webp",
+      "/img/our-work/road-slip-repair-4.webp",
     ],
   },
 ];
@@ -189,7 +191,7 @@ const OurWork = () => {
       />
       <div className="body">
         <HeroCarousel
-          image="/img/assets/keene-krib-our-work.jpg"
+          image="/img/assets/our-work-hero.webp" 
           alt="Keene Krib completed projects"
           heading={
             <>
