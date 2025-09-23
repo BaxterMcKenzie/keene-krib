@@ -31,7 +31,7 @@ const BlockWalls = () => {
         <div className="split-container">
           <img
             className="split-container-img"
-            src="/img/assets/retaining-wall.jpg"
+            src="/img/assets/crib-wall-services.JPG"
             alt="Example of a crib wall built by Keene Krib"
           />
 
